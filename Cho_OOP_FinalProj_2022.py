@@ -120,9 +120,8 @@ class RNA(DNA):
             if len(self.sequence[i:i+3])==3: #Ensures the codon is of length 3
                 self.codons.append(self.sequence[i:i+3]) #Adds the codon to the list
    
-     def translate(self): # Method to translate the RNA sequence to a protein sequence
-        self.translated_sequence = '' #Initialize an empty string for the translated sequence
-
+     def translate(self):  # Method to translate the RNA sequence to a protein sequence
+        self.translated_sequence = ''  # Initialize an empty string for the translated sequence
         for codon in self.codons:  #Iterate through each codon
             if codon not in list(standard_code.keys()): #If the codon is not valid, add 'X'
                 self.translated_sequence += 'X'
