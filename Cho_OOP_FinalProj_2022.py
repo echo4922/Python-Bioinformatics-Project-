@@ -157,3 +157,4 @@ class Protein(Seq):
 
 x=DNA("G","tmp","m",000) #Creates a new DNA object with a sequence "G", gene "tmp", species "m", and geneid 000 for output
 
+print(x)
